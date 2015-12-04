@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Lei|Portfolio</title>
-    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-img {
-    width: 100%;
-    height: auto;
-}
-</style>
+	<meta charset="utf-8" />
+	<title>Lei|Portfolio</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
+	<script src="../../js/ios-orientationchange-fix.min.js"></script>
+	<style>
+
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
 </head>
-<body>
     
-<style type="text/css">
+    <style type="text/css">
 *{ margin:0; padding:0;}
 .nav-wrapper-fixed{ position:fixed; top:5px; width:100%;}
 .nav-wrapper-fixed .nav{width:700px; margin:0 auto;}
@@ -60,19 +68,27 @@ window.onload=function(){
    
 </body>
 </html>
+<body>
 <div>
-    
-  <map name="beachmap">
-<area alt="Handicrafts" title="Handicrafts" href="handicraft.html" shape="rect" coords="200,240,340,120">
-    <area href="digital.html" shape="rect" coords="1000,780,1200,940"
+	<img src="image/IMG_8434.gif" width="1024" height="768" usemap="#powerpuffgirls" alt="" />
+	<map name="powerpuffgirls">
+<area alt="Handicrafts" title="Handicrafts" href="handicraft.html" shape="rect" coords="150,190,270,100">
+    <area href="digital.html" shape="rect" coords="740,730,930,600"
       alt="Digital Arts" title="Digital Arts">
-       <area href="aboutme.html" shape="rect" coords="1100,460,1250,590"
+       <area href="aboutme.html" shape="rect" coords="840,345,960,465"
       alt="About Me" title="About Me">
-    <area href="sketches.html" shape="rect" coords="80,600,220,500"
+    <area href="sketches.html" shape="rect" coords="60,370,180,480"
       alt="Sketchings" title="Sketchings">
-  </map>
+</map>
 </div>
-<p><img src="image/IMG_8434.gif" alt="" usemap="#beachmap"></p>   
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>
 </body>
 </html>
